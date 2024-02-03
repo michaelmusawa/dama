@@ -1,5 +1,4 @@
 .services {
-    margin-top: 4rem;
     position: relative;
 
 }
@@ -10,6 +9,39 @@
     gap: 3rem;
     margin-top: 4rem;
 
+}
+
+.card.services__service:nth-child(5) {
+       
+    grid-row: 2;
+}
+
+.card.services__service:nth-child(5) {
+       
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card.services__service:nth-child(6) {
+    
+    grid-column: 3;
+    grid-row: 2;
+}
+      
+    
+
+.services__service img {
+    width:  100%;
+    position: relative;
+    margin-bottom: 2rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+.services__service img:hover {
+    transform: scale(1.1);
+    transition: var(--transition);
+    
 }
 
 .services__service a {
@@ -40,6 +72,12 @@
 
 .about__image:hover {
     filter: saturate(1);
+}
+
+.about__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__right > p {

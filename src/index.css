@@ -118,8 +118,10 @@ section {
 
 .section__head {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .section__head span {
@@ -180,7 +182,7 @@ section {
 
 
 .header {
-    height: 20rem;
+    height: 40rem;
     overflow: hidden;
     border-bottom: 2px solid var(--color-gray-400);
 }

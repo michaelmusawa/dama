@@ -10,13 +10,13 @@ const Services = () => {
   return (
     <section className="services">
         <div className="container services__container">    
-                <SectionHead icon={FaCrown} title='Main Services'/>
+                <SectionHead icon={<FaCrown/>} title='Main Services' subtitle="What We Do Best"/>
         <div className="services__wrapper">
         {
-            services.map(({id, icon, title, info, path}) => {
+            services.map(({id, image, title, info, path}) => {
                 return(
                     <Card className="services__service" key={id}>
-                        <span>{icon}</span>
+                        <img src={image} alt={`Gallery ${id}`} />
                         <h4>{title}</h4>
                         <small>{info}</small>
                         <Link to={path} className="btn sm">Learn More <AiFillCaretRight /></Link>

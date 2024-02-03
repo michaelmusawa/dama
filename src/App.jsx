@@ -8,6 +8,7 @@ import Contact from './pages/contact/Contact';
 import NotFound from './pages/notFound/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Members from './pages/members/Members';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portifolio" element={<Portifolio />} />
+        <Route path="/members" element={<Members />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

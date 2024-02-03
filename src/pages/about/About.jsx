@@ -3,6 +3,7 @@ import HeaderImage from '../../images/about_hero.jpg'
 import StoryImage from '../../images/company.jpg'
 import VisionImage from '../../images/generalsupplies.jpg'
 import MissionImage from '../../images/cleaning.jpg'
+import WhyusImage from '../../images/generalsupplies.jpg'
 import './about.css';
 
 
@@ -20,16 +21,20 @@ const About =() => {
         <div className="about__section-content">
           <h1>Our Story</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit omnis iure nam sunt, nihil ea corporis eum similique ex assumenda nesciunt at odio quod maxime tempora accusamus a et architecto.
-            Consectetur laboriosam eaque maiores ea neque voluptatem sapiente magnam eos.
+            While we are a young company sprouting from the ground up,
+            our team have enoupur experience and expertise the the main areas that we deal in.
+            We believe in quality workmanship and strive to provide you with the best service possible.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit omnis iure nam sunt, nihil ea corporis eum similique ex assumenda nesciunt at odio quod maxime tempora accusamus a et architecto.
-            Consectetur laboriosam eaque maiores ea neque voluptatem sapiente magnam eos.
+            Biocanopy limited company started with just two people who were passionate to be part of the Kenya Marine Fisheries Socio-Economic Development(KEMFSED) at Matsangoni,KIlifi,kenya.
+            Our aim was to venture in moringa extracts (moringa oil,powder and seeds) along the coastal line,
+            which has a wide variety of medicinal benefits and are being investigated as anti-cancer agents.and antimicrobials.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Illo, earum dolores. Earum rerum asperiores maxime!
+            We were able to grow rapidly over time. Due to public demand and our exceptional customer services we have expanded to be a general supplies comapany,
+            where besides moringa extarcts we do offer: office cleaning services,office stationationaries,machines and equpiments ,office branding services and food stuff.
+            Our mission is to provide quality products and services with exceptional customer service. We aim to build long-term relationships with all of our clients.
+            We believe in providing you with quality products at affordable prices.
           </p>
 
         </div>
@@ -78,6 +83,45 @@ const About =() => {
         </div>
       </div>
     </section>
+    <section className="about__whyus">
+      <div className="container about__whyus-container">
+        
+        <div className="about__section-content">
+          <h1>Why us</h1>
+          <p>
+            With clear mission and continous bdevelopment biocanopy ltd has always endeavored to deliver a range of quality products and solutions with sustainable results.
+            Most of our clients apart from just getting our products,They enjoy our company core values:
+          </p>
+          <ul>
+                    <li><h6>Execeptional Quality Services</h6></li>
+                    <li><p>When, while the lovely valley teems with vapour around me, 
+                        and the meridian sun strikes the upper surface.
+                    </p></li>
+                    <li><h6>Reliabilty</h6></li>
+                    <li><p>When, while the lovely valley teems with vapour around me, 
+                        and the meridian sun strikes the upper surface.
+                    </p></li>
+                    <li><h6>Customer Service</h6></li>
+                    <li><p>When, while the lovely valley teems with vapour around me, 
+                        and the meridian sun strikes the upper surface.
+                    </p></li>
+                    <li><h6>Affordable Price</h6></li>
+                    <li><p>When, while the lovely valley teems with vapour around me, 
+                        and the meridian sun strikes the upper surface.
+                    </p></li>
+                    <li><h6>Accountability </h6></li>
+                    <li><p>When, while the lovely valley teems with vapour around me, 
+                        and the meridian sun strikes the upper surface.
+                    </p></li>
+                </ul>
+
+        </div>
+        <div className="about__section-image">
+          <img src={WhyusImage} alt="Why us" />
+        </div>
+      </div>
+    </section>
+    
     </>
   )
 }

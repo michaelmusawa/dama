@@ -4,7 +4,9 @@ import Imageslider from '../../components/Imageslider';
 import Services from '../../components/Services';
 import About from '../../components/About';
 import Testimonials from '../../components/Testimonials';
-import Footer from '../../components/Footer';
+
+
+
 
 const Home = () => {
   return (
@@ -13,7 +15,7 @@ const Home = () => {
       <Services />
       <About />
       <Testimonials />
-      <Footer />
+      
     </>
     
   )

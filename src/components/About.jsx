@@ -15,10 +15,10 @@ const About = () => {
           </div>
         </div>
         <div className="about__right">
-          <SectionHead icon={<GiCutDiamond/>} title='About' />
+          <SectionHead icon={<GiCutDiamond/>} title='About' subtitle="Our Story" />
           <p>
-            I am a highly motivated and creative professional with over three years of experience in the field
-            I am a highly motivated and creative individual with expertise in web development, 
+            Biocanopy Limited Company is a young company sprouting from the ground up, our team have enoupur experience and expertise the the main areas that we deal in.
+             We believe in quality workmanship and strive to provide you with the best service possible.
           </p>
           <div className="about__wrapper">
             {
