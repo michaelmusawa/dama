@@ -4,6 +4,12 @@ import Header from '../../components/Header';
 import HeaderImage from '../../images/portfolio.jpg'
 import {FaCrown} from 'react-icons/fa'
 import './portifolio.css';
+import OfficeServices from '../../components/OfficeServices';
+import Supplies from '../../components/Supplies';
+import Food from '../../components/Food';
+import Moringa from '../../components/Moringa';
+import Janitorial from '../../components/Janitorial';
+import Fumigation from '../../components/Fumigation';
 
 
 
@@ -20,11 +26,11 @@ const Portifolio = () => {
   return (
    <>
     <Header title="About Us" image={HeaderImage}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod et eveniet voluptas sequi aspernatur reiciendis. Voluptatibus minus nihil suscipit sunt.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </Header>
     <section className="portifolio">
         <div className="container portifolio__container">    
-                <SectionHead icon={FaCrown} title='Main Services'/>
+            <SectionHead icon={<FaCrown/>} title='Main Services' subtitle="What We Do Best" />
         </div>
     </section>
     <div className="portifolio__wrapper">
@@ -71,21 +77,41 @@ const Portifolio = () => {
                   Moringa
             </button>
           </li>
+          <li>
+            <button 
+              onClick={() => changeSection("janitorial")}
+              className={activeSection === "janitorial" ? "active" : "janitorial"}
+                >
+                  Janitorial
+            </button>
+          </li>
+          <li>
+            <button 
+              onClick={() => changeSection("fumigation")}
+              className={activeSection === "fumigation" ? "active" : "fumigation"}
+                >
+                  Fumigation
+            </button>
+          </li>
         </ul>
       </nav>
 
       {activeSection === "all" && (
         <>
-          <Services />
+          <OfficeServices />
           <Supplies />
           <Food />
           <Moringa />
+          <Janitorial />
+          <Fumigation />
         </>
       )}
-      {activeSection === "services" && <Services />}
+      {activeSection === "services" && <OfficeServices />}
       {activeSection === "supplies" && <Supplies />}
       {activeSection === "food" && <Food />}
       {activeSection === "moringa" && <Moringa />}
+      {activeSection === "janitorial" && <Janitorial />}
+      {activeSection === "fumigation" && <Fumigation />}
     </div>
    </>
   )

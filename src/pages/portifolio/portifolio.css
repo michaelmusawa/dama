@@ -1,0 +1,31 @@
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#nav ul li button {
+    border: none;
+    background: none;
+    color: var(--color-gray-100);
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    
+}
+
+#nav ul li button.active {
+    text-decoration: underline;
+    color: var(--color-secondary);
+    transition: var(--transition);
+    gap: 2px;
+}
